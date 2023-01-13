@@ -1,0 +1,33 @@
+@import url(./_normaliza.css);
+@import url(./_variaveis.css);
+@import url(./_cabecalho.css);
+@import url(./_inicio.css);
+@import url(./_sobre.css);
+@import url(./_projetos.css);
+@import url(./_habilidades.css);
+@import url(./_contatos.css);
+
+body {
+    height:fit-content;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    overflow-x:hidden;
+}
+
+.titulo {
+    font-size: 3.5rem;
+    font-family: var(--font-principal);
+    color: var(--branco);
+    text-transform: uppercase;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 0) {
+    .titulo {
+        font-size: 2rem;
+        gap: 1rem;
+    }
+}

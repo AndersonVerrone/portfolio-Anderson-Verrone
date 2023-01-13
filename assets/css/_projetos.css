@@ -1,0 +1,130 @@
+.projetos {
+    width: 100vw;
+    min-height: 100vh !important;
+    background: linear-gradient(to bottom, var(--roxo) 1%, var(--violeta));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20vh 0;
+}
+
+.projetos__container__pagina{
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 5rem;
+}
+
+.projeto {
+    width: 350px;
+    height: 230px;
+    background-color: var(--coral);
+    margin-top: 5rem;
+    border-radius: 20px;
+    box-shadow: 12px 12px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.projeto--gif {
+    width: 350px;
+    height: 230px;
+}
+
+.projeto--gif p {
+    font-size: 2rem;
+    font-family: var(--font-secundaria);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.gif {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.projeto--hover {
+    background: rgba(250, 250, 250, 0.5);
+    width: 350px;
+    height: 230px;
+    border-radius: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    transition: opacity 1.5s ease-in-out;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--preto);
+    font-family: var(--font-secundaria);
+    font-weight: 600;
+}
+
+.projeto--hover p {
+    width: 100%;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: var(--font-principal);
+}
+
+.projeto--hover__link {
+    width: 100px;
+    height: 50px;
+    background-color: var(--azul-claro);
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 17px;
+    color: var(--preto);
+}
+
+.projeto:hover .projeto--hover {
+    opacity: 1;
+
+}
+
+.ativo {
+    display: flex;
+}
+
+.seletor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    color: var(--branco);
+}
+
+.indice {
+    font-family: var(--font-secundaria);
+    cursor: pointer;
+    font-size: 2.5rem;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.next,.prev {
+    cursor: pointer;
+}
+
+.selecionado {
+    color: var(--azul-magenta);
+}
+
+.desativado {
+    opacity: 0;
+    cursor: none;
+}
