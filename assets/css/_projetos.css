@@ -16,6 +16,7 @@
     justify-content: space-around;
     gap: 1rem;
     padding: 5rem;
+    width: 100vw;
 }
 
 .projeto {
